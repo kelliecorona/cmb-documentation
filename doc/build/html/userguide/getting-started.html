@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Computational Model Builder 2019 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Supplemental Documentation" href="../supplemental/supplemental-index.html" />
+    <link rel="prev" title="Getting ModelBuilder" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Computational Model Builder
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="userguide-index.html">ModelBuilder User’s Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">ModelBuilder Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Getting ModelBuilder</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#opening-modelbuilder">Opening ModelBuilder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#managing-plugins">Managing Plugins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importing-model">Importing Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#window-layout">Window Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewport-interaction">Viewport Interaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#model-interaction">Model Interaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#attributes">Attributes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../supplemental/supplemental-index.html">Supplemental Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computational Model Builder</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="userguide-index.html">ModelBuilder User’s Guide</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/userguide/getting-started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Let’s walk through ModelBuilder’s basic operations and logic using
+<a
+href="https://gitlab.kitware.com/cmb/smtk-testing-data/tree/master/cmb"
+target="_blank"> test2D.cmb </a> and <a class="reference download internal" download="" href="../_downloads/643ada32a13b1b0841ff26cd7eb37a56/sample.sbt"><code class="xref download docutils literal notranslate"><span class="pre">sample.sbt</span></code></a>.</p>
+<div class="section" id="opening-modelbuilder">
+<h2>Opening ModelBuilder<a class="headerlink" href="#opening-modelbuilder" title="Permalink to this headline">¶</a></h2>
+<p>After opening ModelBuilder, a window similar to the figure below is displayed:</p>
+<p>However, ModelBuilder panels are tearable so that they can be pulled off and
+moved around as independent windows so the user can organize the interface to
+their preference.</p>
+</div>
+<div class="section" id="managing-plugins">
+<h2>Managing Plugins<a class="headerlink" href="#managing-plugins" title="Permalink to this headline">¶</a></h2>
+<p>In order to load a model, a correct plugin must be loaded. The Plugin Manager
+can be opened from Tools → Mange Plugins:</p>
+<img alt="../_images/LoadPluginsStep1.png" src="../_images/LoadPluginsStep1.png" />
+<p>The plugins that come with CMB are located in the “install/lib” directory of the
+CMB-SuperBuild. To load a new plugin, select “Load New…” and browse for a
+plugin. The plugins will show up in the “Local Plugins” list after being loaded
+with a “Loaded” Property. In our case, the smtkDiscreteSessionPlugin needed by
+test2D.cmb has already been loaded by default; however, cmbPostProcessingModePlugin
+will need to be loaded.</p>
+<img alt="../_images/LoadPluginsStep2.png" src="../_images/LoadPluginsStep2.png" />
+<p>Once the CMB Post Processing plugin is loaded, there will be an additional
+toolbar in ModelBuilder.</p>
+<img alt="../_images/LoadPluginsStep3.png" src="../_images/LoadPluginsStep3.png" />
+</div>
+<div class="section" id="importing-model">
+<h2>Importing Model<a class="headerlink" href="#importing-model" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/ImportObjectsStep1.png"><img alt="../_images/ImportObjectsStep1.png" class="align-right" src="../_images/ImportObjectsStep1.png" style="width: 330.0px; height: 342.0px;" /></a>
+<p>To import an object, click on the “Open” <img alt="mbOpen32" src="../_images/mbOpen32.png" /> icon in the File IO tool bar
+or go to File → Open (CTRL+O) in the main menu bar.</p>
+<p>In the case where there are too many files in the directory, use the “Files of
+type” selection to limit the displayed files to those of a certain type and make
+finding the target files easier. The file types shown here depend on the loaded
+plugins.</p>
+<p>To unload all models currently in the scene, click File → Close Resource
+(CTRL+W).</p>
+<p>Let’s begin by finding and opening the test2D.cmb file.</p>
+</div>
+<div class="section" id="window-layout">
+<h2>Window Layout<a class="headerlink" href="#window-layout" title="Permalink to this headline">¶</a></h2>
+<p>At this point, you should see a window to the following:</p>
+<img alt="../_images/Test2DWindowLayout.png" src="../_images/Test2DWindowLayout.png" />
+<p>The menubar at the top of the screen allows the user to modify settings and
+preferences, operate on files and views, and access tools, macros and help.</p>
+<p>The following rows of toolbars can be customized by toggling their display in
+View → Toolbars, then dragging them to the desired location.  The default
+interface displays (from top-left to bottom-right) the Main Controls, Custom
+Viewpoints Toolbar, Representation Toolbar, SMTK Color Mode, Camera Controls,
+Center Axes Controls, and SMTK Selection Filters.  For more information on all
+of the toolbars available in ModelBuilder, see the <a class="reference internal" href="../supplemental/toolbars.html#toolbars-section"><span class="std std-ref">Toolbars Section</span></a>.</p>
+<p>In addition to these toolbars, the mouse can be used to manipulate the
+camera-view and pick individual model entities.</p>
+<p>The lower portion of the window is the log window, which displays the logs
+generated by the smtk server. It gives the user hints when something goes wrong.</p>
+<img alt="../_images/output-panel.png" src="../_images/output-panel.png" />
+</div>
+<div class="section" id="viewport-interaction">
+<h2>Viewport Interaction<a class="headerlink" href="#viewport-interaction" title="Permalink to this headline">¶</a></h2>
+<p>The camera view in ModelBuilder can be modified using mouse manipulations or
+manual numerical adjustments.</p>
+<a class="reference internal image-reference" href="../_images/settings-window.png"><img alt="../_images/settings-window.png" class="align-right" src="../_images/settings-window.png" style="width: 391.2px; height: 467.4px;" /></a>
+<p>For coarse, quick adjustments to the current viewport view, the mouse can be
+used in the following ways:</p>
+<ul class="simple">
+<li><p>To rotate in the plane of view, middle-click and drag on the viewport.</p></li>
+<li><p>To pan the current view, left-click and drag on the viewport.</p></li>
+<li><p>To zoom the current view, right-click and drag on the viewport or use the
+scroll wheel.</p></li>
+</ul>
+<p>These controls can be further customized in the Settings window (image right),
+which is accessible from ModelBuilder → Preferences.</p>
+<p>For precise camera adjustments, access the Adjust Camera window by selecting the
+camera icon from the viewport menubar.</p>
+<img alt="../_images/toolbar-viewport-AdjustCamera.png" src="../_images/toolbar-viewport-AdjustCamera.png" />
+<p>From the Adjust Camera window shown below, exact numerical values of the camera
+properties can be entered, custom views can be configured, and existing
+configurations can be loaded.</p>
+<img alt="../_images/AdjustCameraPanel.png" src="../_images/AdjustCameraPanel.png" />
+</div>
+<div class="section" id="model-interaction">
+<h2>Model Interaction<a class="headerlink" href="#model-interaction" title="Permalink to this headline">¶</a></h2>
+<p>There are two major methods to interact with the model entities. One way is to
+select entities in the resources tree; the other is to select the entities
+directly in the viewport. Viewport selction can occur by either using the
+“Select Object” icon <img alt="pqSelect32" src="../_images/pqSelect32.png" /> in the SMTK Selection toolbar or pressing “B”
+on your keyboard, then selecting model entities.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><span class="xref std std-ref">&lt;smtk-selection-filters&gt;</span> for the various filters available in
+ModelBuilder to facilitate the viewport selection.</p>
+</div>
+<p>Right-clicking on a face in the viewport will select the face and
+bring up a context menu. From this menu, you can hide face, change color, and
+change representation (of the object).</p>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<p>To load attributes, click the “Open” <a href="#id1"><span class="problematic" id="id2">|pqOpen32|</span></a> button on the File IO toolbar
+and browse for the sample.crf linked above.
+Switch to the Attribute tab. Your program should look similar to the figure below.</p>
+<p>The attribute view is customized by the template file, so different templates
+do not necessarily have the same content. “Show Level” allows the user to present
+the information at different levels: in this example “General” and “Advanced” are
+used. Attributes can also be grouped into categories so that they can be displayed
+by category when too many attributes are present. In this example, the input
+parameter in Tab 2 is a “Double 2” under Category 1 and becomes a “String 2”
+under Category 2.</p>
+<p><a class="reference internal" href="userguide/images/AttributeCategory1.png"><img alt="AttributeCategory1" src="userguide/images/AttributeCategory1.png" style="width: 48%;" /></a> <a class="reference internal" href="userguide/images/AttributeCategory2.png"><img alt="AttributeCategory2" src="userguide/images/AttributeCategory2.png" style="width: 48%;" /></a></p>
+<p>Two vertical tabs (Tab 1 and Tab 2) are shown on the right-hand side as examples
+of the different sections of the simulation inputs, as shown below:</p>
+<p><a class="reference internal" href="userguide/images/AttributeTab1.png"><img alt="AttributeTab1" src="userguide/images/AttributeTab1.png" style="width: 48%;" /></a> <a class="reference internal" href="userguide/images/AttributeTab2.png"><img alt="AttributeTab2" src="userguide/images/AttributeTab2.png" style="width: 48%;" /></a></p>
+<p>Both Tab 1 and Tab 2 are designed to input certain parameters. But Tab 2 has a
+table which allows you to insert multiple instances while Tab 1 does not. These
+are due to the different types used in their views (coded in sample.crf).</p>
+<p>Select File-Save Simulation to save attributes as a CRF file. To export the
+attributes as simulation inputs, click on File-Export Simulation Files, the
+export interface designed in the template that contains two analysis will be shown:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To export a simulation inputs deck, a Python script is required. For a
+user-created template, it has to be written by the user too. For the templates
+that come with ModelBuilder, the Python scripts are provided.</p>
+</div>
+<p>Finally, clicking File-Close Data or press CTRL-W to close the template after
+saving it.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../supplemental/supplemental-index.html" class="btn btn-neutral float-right" title="Supplemental Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Getting ModelBuilder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Kitware
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

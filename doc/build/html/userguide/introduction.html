@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ModelBuilder Introduction &mdash; Computational Model Builder 2019 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting ModelBuilder" href="installation.html" />
+    <link rel="prev" title="ModelBuilder User’s Guide" href="userguide-index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Computational Model Builder
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="userguide-index.html">ModelBuilder User’s Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ModelBuilder Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#key-concepts">Key Concepts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#model">Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#session">Session</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mesh">Mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attribute">Attribute</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#customizing-modelbuilder">Customizing ModelBuilder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workflow">Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Getting ModelBuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../supplemental/supplemental-index.html">Supplemental Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Computational Model Builder</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="userguide-index.html">ModelBuilder User’s Guide</a> &raquo;</li>
+        
+      <li>ModelBuilder Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/userguide/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modelbuilder-introduction">
+<h1>ModelBuilder Introduction<a class="headerlink" href="#modelbuilder-introduction" title="Permalink to this headline">¶</a></h1>
+<p>ModelBuilder is a platform designed to integrate all processes involved in the
+life cycle of numerical simulation. ModelBuilder combines the individual
+preprocessing, solver, and post-processing softwares into one application which
+allows the user to create or import geometry, generate or import mesh, assign
+simulation parameters to the model, generate the simulation input decks for the
+solver, as well as view and process the computational results.</p>
+<div class="section" id="key-concepts">
+<h2>Key Concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h2>
+<p>To understand the workflow of ModelBuilder, it is first necessary to clarify
+several key concepts – model, session, mesh, and attribute.</p>
+<div class="section" id="model">
+<h3>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h3>
+<p>A model refers to the 2D or 3D geometric representation of the simulation
+object. In ModelBuilder, a model can be either created or imported. The origins
+of a model establish the operations that can be applied. Common operations
+include Save, Export, Delete, and Add Auxiliary Geometry.  See <span class="xref std std-ref">The Model
+Tab</span> for more details.</p>
+</div>
+<div class="section" id="session">
+<h3>Session<a class="headerlink" href="#session" title="Permalink to this headline">¶</a></h3>
+<p>ModelBuilder is capable of handling models created by a variety of modeling
+kernels, each using a different format to represent their model. The interface
+between ModelBuilder and the native kernel that creates the model is called a
+session.  For example, the :ref:’vtk session &lt;vtk-session&gt;’ uses VTK data
+structures so that it can handle models in VTK.</p>
+</div>
+<div class="section" id="mesh">
+<h3>Mesh<a class="headerlink" href="#mesh" title="Permalink to this headline">¶</a></h3>
+<p>A mesh is a key component of many of computational methods. It is consist of
+vertices, edges, faces, and their connectivities. Unlike a model, a mesh cannot
+be generated by ModelBuilder and must be imported. Users can link their own
+meshers to ModelBuilder and generate their mesh within ModelBuilder’s framework.
+Once in ModelBuilder, a mesh can be modified – e.g., deleted, exported, or
+interpolated. See <span class="xref std std-ref">The Mesh Tab</span> for details.</p>
+</div>
+<div class="section" id="attribute">
+<h3>Attribute<a class="headerlink" href="#attribute" title="Permalink to this headline">¶</a></h3>
+<p>Each simulation package (e.g., <a href="https://github.com/SNLComputation/Albany" target="_blank"> Albany </a>, <a href="http://openfoam.org/" target="_blank"> Open FOAM </a>, <a href="http://www.dealii.org/" target="_blank"> deal.ii </a>) accepts
+different sets of parameters, called an attribute. Attributes consist of child
+<em>items</em>, i.e., individual parameters. Additionally, there are conditional
+parameters which may or may not exist depending on the values of other items.
+All the parameters form a tree of items that control the simulation.</p>
+</div>
+</div>
+<div class="section" id="customizing-modelbuilder">
+<h2>Customizing ModelBuilder<a class="headerlink" href="#customizing-modelbuilder" title="Permalink to this headline">¶</a></h2>
+<p>Users integrate ModelBuilder into their workflow by providing</p>
+<p>1. a JSON or XML description of the parameters accepted by the simulation
+(called a <em>template</em>), and</p>
+<p>2. a Python script (called an <em>exporter</em>) that examines how the template has
+been filled out and generates an input deck for the simulation.</p>
+<p>Users can provide the template using the editor application that comes with CMB.
+However, users more often utilize a pre-existing template and exporter. Some
+of templates and exporters come with ModelBuilder, while others may be provided
+by other organizations. Refer to <a href="http://smtk.readthedocs.io/en/latest/userguide/attribute/index.html"
+target="_blank"> SMTK's attribute resource documentation </a> for details. Once the template
+is completed, ModelBuilder is used to import or create a model, fill out the
+template, associate the model with a mesh, submit these inputs to run, and
+review results. &lt;possibly reword or reference workflow below&gt;</p>
+</div>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<p>The workflow using ModelBuilder can be summarized in the following steps:</p>
+<ol class="arabic simple">
+<li><p>Model: Create or import a geometry model into  ModelBuilder.  Then the model can be modified with further operations, such as grouping and coloring entities.</p></li>
+<li><p>Mesh: Generate or import a mesh, as described above.</p></li>
+<li><p>Attributes: Assign simulation parameters to the model and export as follows:</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Load the simulation template as discussed above and define the simulation
+parameters through the ModelBuilder GUI.</p></li>
+<li><p>Associate the parameters to the geometry regions in the model.
+For example, when modeling groundwater flow, different sediment layers must
+be defined then associated to the geometric portion of the earth being
+simulated.</p></li>
+<li><p>Export the input decks for the solver.
+Once the simulation parameters have been specified and associated to the
+geometry, ModelBuilder can be used to export an input deck for submission to
+a simulation.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Simulation: Run your simulation locally or remotely. ModelBuilder supports both managed and unmanaged execution of your simulation.</p></li>
+<li><p>Post-Processing: Load the simulation results into ModelBuilder for post-processing and comparative analysis with the input model.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Getting ModelBuilder" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="userguide-index.html" class="btn btn-neutral float-left" title="ModelBuilder User’s Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Kitware
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
